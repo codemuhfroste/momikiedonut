@@ -1,62 +1,89 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Momikie's Donut</title>
-            <link rel="stylesheet" href="styles.css">
-        </head>
-        <body>
-            <header>
-                <h1>Momikie's Donut</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momikie's Donut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <nav class="nav">
+                <a href="#home" class="logo">Momikie's Donut</a>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-            <main>
-                <section id="home">
-                    <h2>Welcome to Momikie's Donut!</h2>
-                    <p>Delicious donuts made fresh every day.</p>
-                </section>
+            <section id="home" class="hero-content">
+                <div>
+                    <p class="tag">OPEN NOW! 9:00 AM to 5:00 PM daily!</p>
+                    <h1>Sweet donuts for every sweet moment.</h1>
+                    <p class="subtitle">Soft, fluffy, and decorated with love. Stop by for a warm treat today.</p>
+                    <a href="#menu" class="btn">See Menu</a>
+                </div>
+                <div class="hero-card" aria-label="Donut illustration">
+                    <span>🍩</span>
+                </div>
+            </section>
+        </div>
+    </header>
 
-                <section id="menu">
-                    <h2>Our Menu</h2>
-                    <ul>
-                        <li>Classic Glazed Donut</li>
-                        <li>Chocolate Frosted Donut</li>
-                        <li>Strawberry Sprinkle Donut</li>
-                        <li>Cinnamon Sugar Donut</li>
-                    </ul>
-                </section>
+    <main>
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>Popular Picks</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Classic Glazed</h3>
+                        <p>Simple, soft, and perfectly sweet.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Chocolate Bliss</h3>
+                        <p>Rich chocolate glaze with a creamy finish.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Berry Sprinkle</h3>
+                        <p>Colorful and fun for every celebration.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <section id="about">
-                    <h2>About Us</h2>
-                    <p>Momikie's Donut has been serving the community with love and passion for over 10 years. Our donuts are made with the finest ingredients and baked to perfection.</p>
-                </section>
+        <section id="about" class="section about">
+            <div class="container about-wrap">
+                <div>
+                    <h2>Why we love baking</h2>
+                    <p>Momikie's Donut has been serving warm pastries with care for over a decade. Every batch is made fresh and filled with joy.</p>
+                </div>
+                <div class="quote">“Made with love, one donut at a time.”</div>
+            </div>
+        </section>
 
-                <section id="contact">
-                    <h2>Contact Us</h2>
-                    <form action="#" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+        <section id="contact" class="section">
+            <div class="container contact-box">
+                <div>
+                    <h2>Visit us</h2>
+                    <p>Open every morning from 7 AM to 6 PM.</p>
+                    <p>123 Sweet Street • Call us at (555) 012-3456</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea placeholder="Your message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-
-                        <button type="submit">Send Message</button>
-                    </form>
-                </section>
-            </main>
-
-            <footer>
-                <p>&copy; 2024 Momikie's Donut. All rights reserved.</p>
-            </footer>
+    <footer>
+        <div class="container footer">
+            <p>&copy; 2026 Momikie's Donut. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
