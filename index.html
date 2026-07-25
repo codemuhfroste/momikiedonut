@@ -7,47 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">Momikie's Donut</a>
             <nav class="nav">
-                <a href="#home" class="logo">Momikie's Donut</a>
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <section id="home" class="hero-content">
-                <div>
-                    <p class="tag">OPEN NOW! 9:00 AM to 5:00 PM daily!</p>
-                    <h1>Sweet donuts for every sweet moment.</h1>
-                    <p class="subtitle">Soft, fluffy, and decorated with love. Stop by for a warm treat today.</p>
-                    <a href="#menu" class="btn">See Menu</a>
-                </div>
-                <div class="DONUT-PIC" aria-label="Donut illustration">
-                    <span>INSERT PICTURE HERE</span>
-                </div>
-            </section>
         </div>
     </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div>
+                <p class="tag">OPEN NOW! 9:00 AM to 5:00 PM daily!</p>
+                <h1>Sweet donuts for every sweet moment.</h1>
+                <p class="subtitle">Soft, fluffy, and decorated with love. Stop by for a warm treat today.</p>
+                <a href="menu.html" class="btn">See Menu</a>
+            </div>
+            <div class="hero-card" aria-label="Donut illustration">
+                <span>🍩</span>
+                <p>Freshly baked daily</p>
+            </div>
+        </div>
+    </section>
 
     <main>
         <section id="menu" class="section">
             <div class="container">
-                <h2>Popular Picks</h2>
-                <div class="card-grid">
-                    <article class="card">
-                        <h3>Classic Glazed</h3>
-                        <p>Simple, soft, and perfectly sweet.</p>
+                <div class="section-heading">
+                    <h2>Doughnuts of the Day</h2>
+                    <p>Choose from our featured favorites and message us for your orders.</p>
+                </div>
+
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h3>PLACEHOLDER PICTURE</h3>
+                        <h3>DONUT 1</h3>
+                        <p>DESCRIPTION 1</p>
                     </article>
-                    <article class="card">
-                        <h3>Chocolate Bliss</h3>
-                        <p>Rich chocolate glaze with a creamy finish.</p>
+                    <article class="featured-card">
+                        <h3>PLACEHOLDER PICTURE</h3>
+                        <h3>DONUT 2</h3>
+                        <p>DESCRIPTION 2</p>
                     </article>
-                    <article class="card">
-                        <h3>Berry Sprinkle</h3>
-                        <p>Colorful and fun for every celebration.</p>
+                    <article class="featured-card">
+                        <h3>PLACEHOLDER PICTURE</h3>
+                        <h3>DONUT 3</h3>
+                        <p>DESCRIPTION 3</p>
                     </article>
                 </div>
             </div>
@@ -66,16 +77,15 @@
         <section id="contact" class="section">
             <div class="container contact-box">
                 <div>
-                    <h2>Visit us</h2>
+                    <h2>Contact Momikie's Doughnuts</h2>
+                    <p>For orders, inquiries, and pickup updates, please reach out through our Facebook page.</p>
                     <p>Open every morning from 9 AM to 5 PM.</p>
                     <p>Butag, Bulan, Sorsogon</p>
                 </div>
-                <form>
-                    <input type="text" placeholder="Your name" required>
-                    <input type="email" placeholder="Your email" required>
-                    <textarea placeholder="Your message" rows="4" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
+                <div class="contact-actions">
+                    <a href="https://www.facebook.com/MomikiesDoughnuts" target="_blank" rel="noopener noreferrer" class="btn">Message us on Facebook</a>
+                    <p class="contact-note">We’re happy to help with your doughnut orders and special requests.</p>
+                </div>
             </div>
         </section>
     </main>
